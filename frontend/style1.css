@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+}
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f5f5fa; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://creativevip.net/resource-images/15-cloud-computing-icons-1.png); 
+    background-size: cover; 
+    animation: animateStripes 10s linear infinite; 
+}
+
+@keyframes animateStripes {
+    0% { background-position: 0 0; }  /* Start from left */
+    50% { background-position: 20px 0; }  /* Move right halfway through */
+    100% { background-position: 0 0; }    /* Back to left at the end */
+}
+html{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle, #ff0202, #ffffff);
+}
+
+.button {
+    width: 200px;
+    border-radius: 10px;
+    height: 50px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;  /* Button text color: white */
+    background: #000; /* Button background: black */
+    margin: 20px;
+    border-style: none;
+    transition: all 0.3s ease; 
+}
+
+.input{
+    width: 300px;
+    border-radius: 10px;
+    height: 50px;
+    font-size: x-large;
+    padding-left: 10px;
+    margin: 20px;
+    border-style: none;
+    background-color: #f5f5fa; /* Adjust as needed (light gray here) */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    padding: 10px; /* Add some padding for better spacing */
+    border-radius: 5px; /* Rounded corners for a smoother look */
+}
+
+.inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    padding-bottom: 50px;
+    border-radius: 40px;
+    margin: auto;
+    margin-top: 12vh;
+    background: #fff; /* Form background: white */
+    border: 1px solid #000;  /* Form border: black, 1px solid */
+}
+
+.heading{
+    margin-top: 60px;
+    margin-bottom: 70px;
+    font-size:35px;
+    font-weight: bolder;
+}
+
+.disp
+{
+    padding-top: 70px;
+    display: flex;
+    font-size:25px;
+    font-weight: bold;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.options .button { 
+    opacity: 0;          /* Initially hide the buttons */
+    transform: translateX(-100px); /* Position slightly offscreen to the left */
+}
+
+.button:hover {
+    background-color: #333; /* Darker color on hover */
+    transform: scale(1.05);   /* Slightly increase size */
+}
